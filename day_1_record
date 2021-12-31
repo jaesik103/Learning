@@ -1,0 +1,11 @@
+01. 판다스입문
+
+1. 시리즈 : 1차원배열, index와 value가 일대일 대응.
+ a. 딕셔너리->시리즈 변환 : pandas.Series(딕셔너리)
+ b. 배열 : Series객채.index , Series객체.values
+
+2.데이터프레임 : 2차원배열. index와 columns 주소를 가지고있음.
+ a. 딕셔너리->데이터프레임 변환 : pd.DataFrame(딕셔너리객체)
+ b. 행/열 설정 : pd.DataFrame(2차원배열, index=행 인덱스 배열, columns=열 이름 배열)
+ c. 행/열 변경 : DataFrame객채.index = 새로운 행 인덱스 배열
+                    DataFrame객채.columns = 새로운 열 이름 배열
