@@ -1,0 +1,38 @@
+01. 판다스입문
+
+ e. 전치행렬 : DataFrame객체.T
+ f. 특정 열을 행 인덱스로 설정 : df.set_index(['열 이름'] or '열 이름')
+ g. 행 인덱스 재배열 : df.reindex(새로운 인덱스 배열)
+ h. 행 인덱스 초기화 : df.reset_index()
+ i. 행 인덱스 기준으로 정렬 : df.sort_index()
+ j. 열 값 기준 정렬 : df.sort_values()
+ 
+02. 데이터 입출력
+
+1. 읽기 : pd.read_csv("파일 경로")
+ a. header : 열 이름으로 사용될 행의 번호(디폴트 : 0)
+ b. index_col, names, skiprows, skip_footer... 등등
+
+2. 저장(쓰기)
+ a. df.to_csv(경로)
+ b. 여러 개의 데이터프레임을 하나의 Excel 파일로 저장 : pd.ExcelWriter(경로)
+     example) writer = pd.ExcelWriter(경로)
+                 df1.to_excel(writer, sheet_name='sheet1')
+                 df2.to_excel(writer, sheet_name='sheet2')
+                 writer.save()
+
+03. 데이터 살펴보기
+ a. df.shape : (행, 열) 로 크기를 보여줌
+ b. df.info() : 기본정보 확인
+ c. df.describe() : 기술 통계 정보 요약
+ d. df.count() : 각 열의 데이터 개수
+ e. df['열이름].value_counts() : 각 열의 고유값 개수
+ f. df[열이름].mean, df[열이름].median(), max, min, std, corr
+ g. plot(kind='') : bar, his, box, scatter, .....
+ 
+04. numpy
+ a. arange(15) # [0 1 2 3 4 .... 14]
+ b. arr.reshape(3,5) # [0 1 2 3 4]
+                            [5 6 7 8 9]
+                            [10 11 12 13 14]
+ c. arr.shape , arr.size, arr.dtype.name, arr.itemsize
