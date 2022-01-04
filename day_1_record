@@ -9,3 +9,4 @@
  b. 행/열 설정 : pd.DataFrame(2차원배열, index=행 인덱스 배열, columns=열 이름 배열)
  c. 행/열 변경 : DataFrame객채.index = 새로운 행 인덱스 배열
                     DataFrame객채.columns = 새로운 열 이름 배열
+ d. 슬라이스 : DataFrame객채.loc[index][columns], DataFrame객채.iloc[index_number][columns_number]
