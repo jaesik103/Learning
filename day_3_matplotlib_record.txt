@@ -1,0 +1,22 @@
+01. matplotlib
+ 1. 설정을 해야 한글이 안깨짐.
+    
+    if platform.system() == 'Darwin': #맥
+        plt.rc('font', family='AppleGothic') 
+    elif platform.system() == 'Windows': #윈도우
+        plt.rc('font', family='Malgun Gothic') 
+    elif platform.system() == 'Linux': #리눅스 (구글 콜랩)
+        plt.rc('font', family='Malgun Gothic') 
+
+    plt.rcParams['axes.unicode_minus'] = False #한글 폰트 사용시 마이너스 폰트 깨짐 해결
+ 
+ 2. plt.figure(figsize(a,b)) : 사이즈 : Inch
+ 3. plt.title('그림제목')
+ 4. plt.xlabel('축이름')
+ 5. plt(plot(a, b, marker='o', markersize=15)) : a=x, b=y
+ 6. plt.style.use('ggplot') : 서식사용
+ 7. plt.xticks(rotation=a, size=b) : a=회전각도, b=x축 글씨 크기 
+ 8. plt.legend(labels=['a'], size=b) : a=범례이름 b=범례위치 
+ 6. plt.show() : 출력
+ 7. x1 = np.linespace(a,b): x의 범위를 a~b까지 설정
+ 8. ax1 = plt.subplot(a, b, c) : a=행의수 b=열의수 c=위치
