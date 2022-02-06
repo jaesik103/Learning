@@ -1,3 +1,3 @@
-# crolling
+# scraping-crawling
 exam 은 예제
-practice는 실습
+나머지는 연습
