@@ -1,0 +1,10 @@
+01. numpy
+ 1. np.count(), mean(), var(), std(), exp(), cos(), perctile()
+ 2. np.random.seed() 후 np.random.rand() 하면 랜덤값 저장 가능
+ 3. np.arrange() : 배열생성
+ 4. np.random.shuffle(arr) : 데이터순서 섞기
+ 5. np.random.choice(5, 10, p=[0.1, 0, 0.3, 0.6, 0]) : 5개중 10개 추출, 확률을 다르게
+ 6. np.random.randint(10, size=10) # 10 포함안함 : 정수난수 발생
+ 7. arr[(x%3==0) & (x%4==1)] : 조건에 맞는 value 추출. and=&, or=|
+ 
+ 
